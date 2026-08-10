@@ -7,8 +7,16 @@ header {
   background-color: #A8C686;
 }
 
+/* Change nav element to display as inline-block with 80% width */
 nav {
   background-color: #A8C686;
+  display: inline-block;
+  width: 80%;
+}
+
+/* Descendant selector to style only the image inside nav to have 10% width */
+nav img {
+  width: 10%;
 }
 
 main {
@@ -20,10 +28,13 @@ footer {
   background-color: #A8C686;
 }
 
+/* Commented out existing styling for li element */
+/* 
 li {
   display: inline-block;
   width: 150px;
 }
+*/
 
 h1 {
   text-align: center;
@@ -33,4 +44,25 @@ h1 {
 
 p {
   line-height: 1.6;
+}
+
+/* Style grid class as a two-column grid (40% each) with layout adjustments */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Descendant selector to style only images inside .grid class */
+.grid img {
+  width: 100%;
+}
+
+/* Style flex class using Flexbox */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
