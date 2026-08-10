@@ -13,10 +13,22 @@ nav {
   display: inline-block;
   width: 80%;
 }
+nav ul {
+  display: inline-block;
+  width: 85%;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
 /* Descendant selector to style only the image inside nav to have 10% width */
 nav img {
   width: 10%;
+  vertical-align: middle;
 }
 
 main {
